@@ -1,0 +1,28 @@
+empty:
+  email: user@example.com
+  encrypted_password: <%= Devise::Encryptor.digest(User, "password") %>
+  confirmed_at: <%= DateTime.current %>
+
+developer:
+  email: developer@example.com
+  encrypted_password: <%= Devise::Encryptor.digest(User, "password") %>
+  confirmed_at: <%= DateTime.current %>
+
+prospect_developer:
+  email: prospect_developer@example.com
+  encrypted_password: <%= Devise::Encryptor.digest(User, "password") %>
+  confirmed_at: <%= DateTime.current %>
+
+business:
+  email: business@example.com
+  encrypted_password: <%= Devise::Encryptor.digest(User, "password") %>
+  confirmed_at: <%= DateTime.current %>
+
+subscribed_business:
+  email: customer@example.com
+  confirmed_at: <%= DateTime.current %>
+
+admin:
+  email: admin@example.com
+  confirmed_at: <%= DateTime.current %>
+  admin: true

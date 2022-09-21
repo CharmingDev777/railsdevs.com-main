@@ -1,0 +1,18 @@
+<% if resource.errors.any? %>
+  <% content_for :flash do %>
+    <%= render ToastMessageComponent.new(icon: "x_circle", color: :red, messages_tag: :ul) do |c| %>
+      <%= c.title do %>
+        <%# i18n-tasks-use t('activerecord.models.business') %>
+        <%# i18n-tasks-use t('activerecord.models.developer') %>
+        <%# i18n-tasks-use t('activerecord.models.user') %>
+        <%= I18n.t "errors.messages.not_saved", count: resource.errors.count, resource: resource.class.model_name.human.downcase %>
+      <% end %>
+
+      <% resource.errors.each do |error| %>
+        <% c.message do %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+<% end %>

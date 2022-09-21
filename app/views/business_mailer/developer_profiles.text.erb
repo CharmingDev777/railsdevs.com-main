@@ -1,0 +1,14 @@
+<%= @business.contact_name %>,
+
+Here are the new developer profiles on railsdevs:
+
+<% @developers.each do |developer| %>
+<%= developer.hero %>
+  <%= developer.bio %>
+  <%= developer_url(developer) %>
+
+<% end %>
+
+<%= render "shared/signature" %>
+Update my email notification settings:
+  <%= edit_business_url(@business, anchor: "notifications") %>

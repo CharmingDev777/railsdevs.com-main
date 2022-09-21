@@ -1,0 +1,18 @@
+from_business:
+  conversation: one
+  body: One message.
+  body_html: <p>One message.</p>
+  sender: subscriber (Business)
+
+from_business_earlier:
+  conversation: one
+  body: Earlier message.
+  body_html: <p>Earlier message.</p>
+  sender: subscriber (Business)
+  created_at: <%= Time.current - 1.day %>
+
+from_developer:
+  conversation: one
+  body: Two message.
+  body_html: <p>Two message.</p>
+  sender: prospect (Developer)

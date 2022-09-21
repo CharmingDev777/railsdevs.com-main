@@ -1,0 +1,17 @@
+developer_avatar:
+  name: avatar
+  record_type: Developer
+  record_id: <%= ActiveRecord::FixtureSet.identify(:one) %>
+  blob_id: <%= ActiveRecord::FixtureSet.identify(:lovelace) %>
+
+developer_cover_image:
+  name: cover_image
+  record_type: Developer
+  record_id: <%= ActiveRecord::FixtureSet.identify(:one) %>
+  blob_id: <%= ActiveRecord::FixtureSet.identify(:mountains) %>
+
+business_avatar:
+  name: avatar
+  record_type: Business
+  record_id: <%= ActiveRecord::FixtureSet.identify(:one) %>
+  blob_id: <%= ActiveRecord::FixtureSet.identify(:basecamp) %>

@@ -1,0 +1,13 @@
+one:
+  user: developer
+  name: Developer One
+  available_on: <%= Date.new(2021, 1, 1) %>
+  hero: Developer number one
+  bio: I am the first developer.
+  search_status: actively_looking
+
+prospect:
+  user: prospect_developer
+  name: Prospect Developer
+  hero: A prospect developer
+  bio: I am prospect developer.
